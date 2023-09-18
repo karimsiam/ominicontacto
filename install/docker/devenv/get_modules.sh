@@ -20,7 +20,7 @@ for i in "${repositories[@]}"; do
     if [ "$CICD" == "True" ]; then
       git clone https://gitlab.com/omnileads/oml$i.git
     else
-      git clone git@gitlab.com:omnileads/oml$i.git
+      git clone https://gitlab.com/omnileads/oml$i.git
     fi
   else
     echo "***[OML devenv] $i repository already cloned"
